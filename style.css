@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+
+.main-section{
+    height: calc(100% - 73px);
+}
+
+.remote-player{
+    height: 300px;
+    background-color: black;
+}
+.local-player{
+    max-height: 150px;
+    max-width: 300px;
+}
+
+.buttons{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}

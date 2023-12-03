@@ -1,0 +1,4 @@
+- Để có thể chạy được source code, cần chuẩn bị extension Live Server.
+- Khi chạy Live Server sẽ hiện file index.html trên trình duyệt.
+- Tiến hành nhập hoặc tạo room.
+- Chú ý cần nhập room giống nhau mới có thể kết nối được với nhau. 

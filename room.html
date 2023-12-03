@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>WebRTC Demo</title>
+</head>
+
+<body class="bg-dark">
+    <!-- <div class="videos">
+        <span>
+            <video id="webcamVideo" class="bg-black" autoplay playsinline></video>
+        </span>
+        <span>
+            <video id="remoteVideo" class="bg-black" autoplay playsinline></video>
+        </span>
+
+
+    </div> -->
+    <div class="d-flex bg-dark justify-content-between align-items-center p-3 border-bottom border-light-subtle" style="height: 73px;">
+        <h5 class="text-white p-2 m-0 ms-5">WEBRTC DEMO MIDTERM NODEJS</h2>
+        <div>
+            <!-- <p class="d-inline text-white me-5">Mã phòng: <span id="roomId"></span></p> -->
+            <p class="m-0 me-5 text-white text-center d-inline"><i class="bi bi-people" style="font-size: 1rem;"></i> <span class="text-danger" id="quantity"> 1 </span>
+            </p>
+        </div>
+    </div>
+    <div class="main-section container-fluid bg-dark">
+        <div class="row" style="height: 100%;">
+            <div class="col">
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="col text-center">
+                            <video class="remote-player bg-white me-2 rounded-5" muted autoplay playsinline id="remoteUser"></video>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col text-end">
+                            <video class="local-player bg-white me-2 rounded-5" muted autoplay playsinline id="localUser"></video>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 text-white text-end"><p id="timer">0:00</p></div>
+                        <div class="col ms-5" id="buttons">
+                            <button id="micButton" class="bg-white buttons me-4"><i class="bi bi-mic"></i></button>
+                            <button id="webcamButton" class="bg-white buttons me-4"><i class="bi bi-camera-video"></i></button>
+                            <button id="hangupButton" type="button" class="btn btn-danger">Hangup</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1 border-start border-light-subtle text-center">
+                <div><button class="bg-white buttons mt-5"><i class="bi bi-people"></i></button></div>
+                <div><button class="bg-white buttons mt-5"><i class="bi bi-chat"></i></button></div>
+                <div><button class="bg-white buttons mt-5"><i class="bi bi-easel"></i></button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <button id="webcamButton">Start webcam</button>
+    <h2>2. Create a new Call</h2>
+    <button id="callButton" disabled>Create Call (offer)</button>
+
+    <h2>3. Join a Call</h2>
+    <p>Answer the call from a different browser window or device</p>
+
+    <input id="callInput" />
+    <button id="answerButton" disabled>Answer</button>
+
+    <h2>4. Hangup</h2>
+
+    <button id="hangupButton" disabled>Hangup</button> -->
+
+    <script type="module" src="/main.js"></script>
+
+</body>
+
+</html>
